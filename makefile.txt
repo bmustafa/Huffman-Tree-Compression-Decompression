@@ -1,0 +1,9 @@
+compress: PriorityQueue.o 
+	c++ -o compress compress.cc PriorityQueue.o 
+
+
+PriorityQueue.o: PriorityQueue.h
+	c++ -c PriorityQueue.cc
+
+clean:
+	/bin/rm -f *.o writer
